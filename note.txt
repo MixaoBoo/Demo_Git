@@ -4,8 +4,16 @@ khi khởi tạo local re
 cách kết nối remote repo với local repo lại với nhau: dùng lệnh git remote add origin kèm url đường dẫn tới source code trên remote
 
 các bước để đẩy code chúng ta lên remote repo
-B1: sẽ đẩy các file có sự thay đổi lên sraging area, dùng lệnh git add + tên file nếu muốn đẩy từng file, muốnd đẩy tất cả dùng lệnh git add . , để kiểm tra sự thay đổi ta có thể dùng lệnh git status, muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
+B1: sẽ đẩy các file có sự thay đổi lên staging area, dùng lệnh git add + tên file nếu muốn đẩy từng file, muốn đẩy tất cả dùng lệnh git add . , để kiểm tra sự thay đổi ta có thể dùng lệnh git status, muốn đảo ngược lại việc thêm các file có sự thay đổi lên staging area dùng lệnh git reset
 
 B2: tạo ca commit để ghi chú lại sự thay đổi code, chúng ta dùng lệnh git commit -m "lời nhắn", muốn kiểm tra các commit có thể dùng lệnh git log
 
 B3: dẩy code từ local repo lên remote repo để lưu trữ, lần đầu sẽ dùng lệnh git push -u origin + tên nhánh, những lần sau chỉ cần dùng lệnh git push origin
+
+Khi đi làm tham gia một dự án mới, cần lấy source code từ trên remote repo ta dùng lệnh git clone + link source code lấy từ gitHub
+
+Khi làm ta muốn tét qua một số chức năng mới, nhưng sợ ảnh hưởng tới các đoạn code cũ đang có, ta sẽ commit lại đoạn code đó và chỉnh sửa, nếu muốn quay về vị trí commit đó khi lỗi ta có thể dùng lệnh git stash
+
+Các bước để tạo nhánh:
+B1: dùng lệnh git branch + tên nhánh
+-> Muốn kiểm tra các nhánh đang có ở local ta dùng lệnh git branch, nếu muốn chuyển nhánh sẽ dùng lệnh git checkout + tên nhánh, 
